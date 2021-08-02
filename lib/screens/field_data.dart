@@ -83,16 +83,7 @@ class _field_dataState extends State<field_data> {
                             ),
                     ],),),
                   
-                  Padding(padding: EdgeInsets.only(top: 35.0),),
 
-                  RaisedButton(
-                    onPressed: getData,
-                    child: Padding(
-                      padding: const EdgeInsets.all(18.0),
-                      child: Text("Refresh Data",textAlign: TextAlign.center,style: TextStyle(fontSize: 20.0,color: Colors.white,),
-                  ),
-                  
-                            ), color: Colors.green[500],         ),
           ],
         ),
  

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-import 'login_screen.dart';
-
+import 'package:smart_irrigation/screens/login_screen.dart';
 
 class forgot_password extends StatelessWidget {
   @override

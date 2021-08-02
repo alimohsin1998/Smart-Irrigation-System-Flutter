@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:irrigation_system/screens/registration.dart';
+import 'package:smart_irrigation/screens/forgot_password.dart';
+import 'package:smart_irrigation/screens/registration.dart';
 import 'dart:async';
-import 'forgot_password.dart';
 import 'home.dart';
 import 'loading.dart';
 

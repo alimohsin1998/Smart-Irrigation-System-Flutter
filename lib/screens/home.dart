@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:irrigation_system/screens/sensor_status.dart';
-import 'package:irrigation_system/screens/team.dart';
-import 'package:irrigation_system/screens/weather.dart';
+import 'package:smart_irrigation/screens/sensor_status.dart';
+import 'package:smart_irrigation/screens/team.dart';
+import 'package:smart_irrigation/screens/weather.dart';
 import 'crops_parameters.dart';
 import 'history.dart';
 import 'login_screen.dart';

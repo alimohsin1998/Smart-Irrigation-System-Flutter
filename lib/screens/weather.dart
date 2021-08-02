@@ -19,10 +19,10 @@ var visibility;
 var wind;
 var status;
 var description;
-String url="";
+String url="api.openweathermap.org/data/2.5/weather?q=lahore&units=metric&appid=12e4c6d527682be1fe5033b7e6308144";
 
 Future getWeather()async{
-    final http.Response response = await http.get(Uri.parse(url));
+    final http.Response response = await http.get(Uri.parse('https://api.openweathermap.org/data/2.5/weather?q=lahore&units=metric&appid=12e4c6d527682be1fe5033b7e6308144'));
     var results =jsonDecode(response.body);
     
     setState(() {
@@ -72,13 +72,7 @@ print(temperature);
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top:28.0),
-                        child: Column(
-                          children: [
-                            Text("Humidity: $humidity" + "%" ,style:TextStyle(fontSize:20.0, color:Colors.white, fontWeight:FontWeight.w400),),
-                          
-                            Text("Description: $description" ,style:TextStyle(fontSize:20.0, color:Colors.white, fontWeight:FontWeight.w400),),
-                          ],
-                        ),
+                        child: Text("Humidity: $humidity" + "%" + " , Description: $description",style:TextStyle(fontSize:20.0, color:Colors.white, fontWeight:FontWeight.w400),),
                       ),
                     ],
                   ),
